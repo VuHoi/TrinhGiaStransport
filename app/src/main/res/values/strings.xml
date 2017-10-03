@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">testhorizontal</string>
+    <string-array name="auto"
+        >
+        <item>Mai Chi Tai - 0298994F9088 - 02084028404</item>
+        <item>Mai Chi Tai 2 - 0298994F9088 - 02084028404</item>
+        <item>Mai Chi Tai 3 - 0298994F9088 - 02084028404</item>
+        <item>Mai Chi Tai 4 - 0298994F9088 - 02084028404</item>
+        <item>Vu khac hoi - 32498D09801 - 93794925</item>
+
+
+    </string-array>
+</resources>

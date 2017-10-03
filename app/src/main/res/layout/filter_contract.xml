@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="Tìm kiếm theo xe"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+   android:layout_below="@+id/textView"
+        android:padding="10dp"
+        android:text="Xe : "
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edtMa"
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/textView"
+        android:hint="Mai Chi Tai - 0298994F9088 - 02084028404"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/textView1"
+     />
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:layout_below="@id/edtMa"
+    android:layout_marginTop="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnOK_Ma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginRight="20dp"
+        android:text="OK"
+       />
+
+    <Button
+        android:id="@+id/btnCancel_Ma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Cancel"
+       />
+</LinearLayout>
+</RelativeLayout>

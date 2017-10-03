@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:cardBackgroundColor="#FF00"
+    android:maxHeight="100dp"
+    android:id="@+id/card_view"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="16dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/txtcar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+       />
+    <!--<ListView-->
+        <!--android:isScrollContainer="false"-->
+        <!--android:id="@+id/lsvContractOfCar"-->
+        <!--android:layout_weight="1"-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lnitem"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent"></LinearLayout>i
+</LinearLayout>
+</android.support.v7.widget.CardView>

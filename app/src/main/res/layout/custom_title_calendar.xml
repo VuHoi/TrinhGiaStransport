@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sep"
+
+    android:textAlignment="center"
+    android:textColor="#f4e5e5"
+    android:layout_centerInParent="true"
+    android:layout_alignParentTop="true"
+
+    android:id="@+id/txtMonth"
+    android:textSize="25dp"
+    />
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:layout_centerInParent="true"
+android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/txtday"
+        android:textSize="35dp"
+        android:layout_below="@id/txtMonth"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fri"
+        android:textColor="#f4e5e5"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:id="@+id/txtThu"
+
+        android:layout_below="@id/txtday"
+        />
+
+</RelativeLayout>
