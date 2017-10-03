@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/btnDate"
+        android:title="Tìm theo ngày"
+        android:icon="@drawable/ic_launcher_background"
+        app:showAsAction="withText"></item>
+    <item android:id="@+id/btnContract"
+        android:title="Tìm theo mã hợp đồng"
+        app:showAsAction="withText"></item>
+</menu>
