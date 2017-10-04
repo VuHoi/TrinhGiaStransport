@@ -47,7 +47,7 @@ date=calendarStart.get(Calendar.DATE);
         year=calendarStart.get(Calendar.YEAR);
         dayFragments=new ArrayList<>();
         viewPager =  findViewById(R.id.viewpager);
-
+viewPager.setOffscreenPageLimit(5);
         tabLayout =  findViewById(R.id.tabs);
 
         adapter = new ViewPagerAdapter(getSupportFragmentManager(),size,calendarStart);
