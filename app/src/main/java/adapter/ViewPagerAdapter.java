@@ -3,6 +3,7 @@ package adapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 
 import com.example.vukhachoi.testhorizontal.DayFragment;
 
@@ -17,7 +18,7 @@ import java.util.List;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     List<DayFragment> mFragmentList = new ArrayList<>();
-    List<Date>dates=new ArrayList<>();
+
     Calendar ab;
 int Size=0;
     private FragmentManager mFragmentManager;
@@ -31,6 +32,7 @@ Size=size;
 
     @Override
     public Fragment getItem(int position) {
+
         return mFragmentList.get(position);
     }
     @Override
@@ -40,21 +42,24 @@ Size=size;
 
     public void AddFrag (DayFragment dayFragment,Date date) {
         mFragmentList.add(dayFragment);
-        dates.add(date);
+
     }
 
     public void remove () {
+        FragmentTransaction fragmentTransaction=mFragmentManager.beginTransaction();
+        for(Fragment dayFragment:mFragmentList)
+            mFragmentList.remove(dayFragment);
         mFragmentList.clear();
         notifyDataSetChanged();
     }
 
     @Override
     public int getItemPosition(Object object) {
-        if (mFragmentList != null) {
+
             if (object instanceof UpdateableFragment) {
                     ((UpdateableFragment) object).update(ab.getTime());
                 ab.add(Calendar.DATE,1);
-            }
+
         }
         return super.getItemPosition(object);
     }
@@ -64,10 +69,7 @@ Size=size;
         return "";
     }
 
-public void a(Date date)
-{
-dates.add(date);
-}
+
 }
 
 
